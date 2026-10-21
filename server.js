@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
@@ -60,7 +60,11 @@ app.use((req, res, next) => {
     res.status(404).render('404');
 });
 
-// Start server
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+// Start server locally
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`Server running at http://localhost:${port}`);
+    });
+}
+
+module.exports = app;

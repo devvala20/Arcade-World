@@ -1,33 +1,33 @@
-﻿{
-  name: arcade-world,
-  version: 1.0.0,
-  description: A web platform for classic retro WebAssembly games powered by WASM-4,
-  main: server.js,
-  scripts: {
-    start: node server.js
+{
+  "name": "arcade-world",
+  "version": "1.0.0",
+  "description": "A web platform for classic retro WebAssembly games powered by WASM-4",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
   },
-  dependencies: {
-    ejs: ^3.1.10,
-    express: ^4.21.2
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
   },
-  repository: {
-    type: git,
-    url: git+https://github.com/devvala20/Arcade-World.git
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devvala20/Arcade-World.git"
   },
-  keywords: [
-    arcade,
-    retro,
-    games,
-    wasm,
-    wasm-4,
-    webassembly,
-    express,
-    ejs
+  "keywords": [
+    "arcade",
+    "retro",
+    "games",
+    "wasm",
+    "wasm-4",
+    "webassembly",
+    "express",
+    "ejs"
   ],
-  author: DevVala,
-  license: ISC,
-  bugs: {
-    url: https://github.com/devvala20/Arcade-World/issues
+  "author": "DevVala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devvala20/Arcade-World/issues"
   },
-  homepage: https://github.com/devvala20/Arcade-World#readme
+  "homepage": "https://github.com/devvala20/Arcade-World#readme"
 }
